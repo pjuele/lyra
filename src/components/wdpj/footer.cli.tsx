@@ -1,12 +1,12 @@
 'use client';
 
-import { Separator } from "@/components/ui/separator";
+// import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 
 export default function Footer() {
     return (
         <>
-            <Separator />
+            {/* <Separator /> */}
             <div className="p-5 container flex flex-row gap-2 align-middle justify-center">
                 <div className="text-sm">
                     © 2024

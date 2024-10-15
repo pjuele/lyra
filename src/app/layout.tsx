@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 // import localFont from "next/font/local";
 
-import { Exo_2 as TitleFont } from "next/font/google"
+import { Londrina_Solid as TitleFont } from "next/font/google"
+// import { Exo_2 as TitleFont } from "next/font/google"
 import { Montserrat as BodyFont } from "next/font/google"
 
 import "./globals.css";
@@ -13,6 +14,7 @@ import { cn } from "@/lib/utils";
 const titleFont = TitleFont({
   subsets: ["latin"],
   variable: "--font-title ",
+  weight: "400",
 })
 
 const bodyFont = BodyFont({

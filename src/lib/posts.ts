@@ -5,11 +5,9 @@ import matter from "gray-matter";
 export type MDData = {
   id: string;
   title: string;
+  language: string;
   slug: string;
-  date: Date;
-  excerpt: string;
   markdown: string;
-  imageSrc: string;
 };
 
 const mdDirectory = path.join(process.cwd(), "md");
@@ -33,22 +31,18 @@ export async function getSortedMDData(): Promise<MDData[]> {
       id,
       ...matterResult.data,
     } as MDData;
-    // } as {
-    //   id: string;
-    //   title: string;
-    //   date: Date;
-    // };
   });
-  // Sort md by date
-  return allMDData.sort(({ date: a }, { date: b }) => {
-    if (a < b) {
-      return 1;
-    } else if (a > b) {
-      return -1;
-    } else {
-      return 0;
-    }
-  });
+  return allMDData;
+  // // Sort md by date
+  // return allMDData.sort(({ date: a }, { date: b }) => {
+  //   if (a < b) {
+  //     return 1;
+  //   } else if (a > b) {
+  //     return -1;
+  //   } else {
+  //     return 0;
+  //   }
+  // });
 }
 
 export async function getOneMDData(slug: string): Promise<MDData> {
