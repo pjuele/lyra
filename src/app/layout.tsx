@@ -52,7 +52,8 @@ export default function RootLayout({
           bodyFont.variable,
           // geistSans.variable,
           // geistMono.variable,
-          "antialiased font-body"
+          "antialiased font-body",
+          "p-3 md:p-5 lg:p-10",
         )}
       >
         <ThemeProvider

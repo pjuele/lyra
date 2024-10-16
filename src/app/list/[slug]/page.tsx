@@ -10,8 +10,8 @@ import Link from "next/link";
 export default async function Page({ params }: { params: { slug: string } }) {
   const postData = await getOneMDData(params.slug);
   return (
-    <div className="flex flex-col lg:flex-row gap-5 w-full">
-      <div className="p-5 flex flex-col gap-5 w-full">
+    <div className="flex flex-col lg:flex-row gap-5 w-full mb-20">
+      <div className="flex flex-col gap-10 w-full">
         <MDHero postData={postData} />
         <BlogMDContent postData={postData} />
       </div>
@@ -22,7 +22,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
 function MDHero({ postData }: { postData: MDData }) {
   // const imgSrc = postData.imageSrc || "/blog-placeholder.jpg";
   return (
-    <div className="flex flex-col gap-5 align-baseline justify-start w-full">
+    <div className="flex flex-col gap-10 align-baseline justify-start w-full">
       <Link href="/list">
         <LyraLogo className="max-w-[100px] fill-muted-foreground" />
         </Link>

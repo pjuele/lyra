@@ -6,7 +6,8 @@ export default function LyraLogo({ className }: { className?: string }) {
     return (
     <svg className={cn(
         className,
-        "w-full h-auto"
+        "w-full h-auto",
+        "drop-shadow-[0_0_20px_rgba(200,200,200,0.9)]",
         )}
         viewBox="0 0 240 139">
         <defs></defs>

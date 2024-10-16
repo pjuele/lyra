@@ -7,7 +7,7 @@ export default function Footer() {
     return (
         <>
             {/* <Separator /> */}
-            <div className="p-5 container flex flex-row gap-2 align-middle justify-start">
+            <div className="container flex flex-row gap-2 align-middle justify-start">
                 <div className="text-sm">
                     © 2024
                 </div>
