@@ -51,7 +51,7 @@ function BlogPostCard({postData}: {postData: MDData}) {
         )}>
         <div className="flex flex-row gap-4 align-middle">
           {/* <LanguageIcon language={postData.language as string} /> */}
-          <span className="text-2xl font-title font-extrabold uppercase text-wrap">{postData.title}</span>
+          <span className="text-2xl font-title font-semibold uppercase text-wrap">{postData.title}</span>
         </div>
       </div>
     </Link>
