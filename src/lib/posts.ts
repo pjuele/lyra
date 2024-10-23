@@ -5,6 +5,7 @@ import matter from "gray-matter";
 export type MDData = {
   id: string;
   title: string;
+  author: string;
   language: string;
   slug: string;
   markdown: string;

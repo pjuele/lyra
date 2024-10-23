@@ -27,6 +27,7 @@ function MDHero({ postData }: { postData: MDData }) {
         <LyraLogo className="max-w-[100px] fill-muted-foreground" />
         </Link>
       <h1 className="text-balance text-5xl font-title [text-shadow:_0_3px_20px_#00000090]">{postData.title}</h1>
+      <small className="text-balance">{postData.author}</small>
     </div>
 );
 }
